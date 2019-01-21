@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net472</TargetFrameworks>
+    <LangVersion>7.3</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Bind classes to interfaces, enabling more polymorphic inheritence and extensability of code you don't own, or making using legacy code slightly more enjoyable.</Description>
+    <Copyright>SirJosh3917</Copyright>
+    <Authors>SirJosh3917</Authors>
+    <PackageLicenseUrl>https://github.com/SirJosh3917/Biind/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/SirJosh3917/Biind</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SirJosh3917/Biind</RepositoryUrl>
+    <PackageTags>reflection, bind, polymorphism</PackageTags>
+    <PackageReleaseNotes>1.0.0</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Condition="'$(TargetFramework)'=='netstandard2.0'" Include="System.Reflection.Emit" Version="4.3.0" />
+    <PackageReference Condition="'$(TargetFramework)'=='netstandard2.0'" Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
