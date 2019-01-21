@@ -4,9 +4,7 @@
 
 Bind classes to interfaces, enabling more polymorphic inheritence and extensability of code you don't own, or making using legacy code slightly more enjoyable.
 
-```
-> PM Install-Package Biind
-```
+> PM> Package-Install Biind
 
 ## Examples
 
